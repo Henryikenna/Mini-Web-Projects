@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Arrow SVG Animation</title>
+
+
+
+</head>
+
+<body>
+    <svg width="120" height="100" viewBox="0 0 120 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g id="triangles" clip-path="url(#clip0_107_72)">
+            <g id="light">
+                <path id="light1"
+                    d="M39.4618 47.8294C40.6623 48.6196 40.6623 50.3804 39.4618 51.1706L7.59956 72.1417C6.26971 73.0169 4.5 72.0631 4.5 70.471V28.529C4.5 26.9369 6.26971 25.9831 7.59956 26.8583L39.4618 47.8294Z"
+                    fill-opacity="0.7" />
+            </g>
+            <g id="dark">
+                <path id="dark1"
+                    d="M39.4618 47.8294C40.6623 48.6196 40.6623 50.3804 39.4618 51.1706L7.59956 72.1417C6.26971 73.0169 4.5 72.0631 4.5 70.471V28.529C4.5 26.9369 6.26971 25.9831 7.59956 26.8583L39.4618 47.8294Z"
+                    fill-opacity="0.7" />
+                <path id="dark2"
+                    d="M55.4618 47.8294C56.6623 48.6196 56.6623 50.3804 55.4618 51.1706L23.5996 72.1417C22.2697 73.0169 20.5 72.0631 20.5 70.471V28.529C20.5 26.9369 22.2697 25.9831 23.5996 26.8583L55.4618 47.8294Z"
+                    fill-opacity="0.6" />
+            </g>
+        </g>
+        <defs>
+            <clipPath id="clip0_107_72">
+                <rect width="120" height="100" fill="white" />
+            </clipPath>
+        </defs>
+    </svg>
+
+    <a href="phone.html">
+        <button class="" style="background-color: brown; width: 11em; height: 4em; color: white; font-family: Arial, Helvetica, sans-serif; cursor: pointer;">
+            To phone animation
+        </button>
+    </a>
+
+
+
+
+    <!-- <script>
+        const svg = document.getElementById('triangles');
+
+        svg.onclick = (e) => {
+            const colors = ['red', 'blue', 'green', 'orange', 'pink', 'purple',];
+            const rando = colors[Math.floor(Math.random() * colors.length)];
+
+            document.documentElement.style.cssText = `
+            --dark-color: ${rando()};      
+            --light-color: ${rando()};      
+      
+            `
+        }
+    </script> -->
+</body>
+
+</html>

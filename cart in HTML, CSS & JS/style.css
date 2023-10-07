@@ -1,0 +1,21 @@
+/* Add some styling to the product and button */
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.product img{
+    width: 120px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+}
+.add-to-cart-button {
+    padding: 10px;
+    background-color: green;
+    color: white;
+}
+.cart {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+}

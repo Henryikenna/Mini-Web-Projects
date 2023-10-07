@@ -1,0 +1,13 @@
+.imageUpload{
+    justify-content: center;
+    /* text-align: center;
+    align-items: center; */
+}
+
+.imageUpload img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #dfdfdf;
+}

@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+section{
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+button{
+    border: 5px solid #000;
+    background-color: #893218;
+    color: aliceblue;
+    padding: 10px;
+    width: 130px;
+    height: 60px;
+    text-align: center;
+}
+
+section .bt1{
+    transform: translateX(40px);
+}
+section .bt2{
+    transform: translateY(40px);
+}
+section .bt3{
+    transform: translate(40px);
+}
+section .bt4{
+    transform: scaleX(1.25);
+}
+section .bt5{
+    transform: scaleY(1.25);
+}
+section .bt6{
+    transform: scale(1.25);
+}
+section .bt7{
+    transform: rotate(45deg);
+}
+section .bt8{
+    transform: perspective(300px) rotateX(45deg);
+}
+section .bt9{
+    transform: perspective(300px) rotateY(45deg);
+}
+section .bt10{
+    transform: perspective(300px) rotateZ(45deg);
+}
+section .bt11{
+    transform: skewX(10deg);
+}
+section .bt12{
+    transform: skewY(10deg);
+}
+section .bt13{
+    transform: skew(10deg, 10deg);
+}

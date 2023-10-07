@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins';
+    font-size: 42px;
+    background-color: #141414;
+    color: #f1f1f1;
+    padding: 2vw;
+}
+
+div{
+    display: flex;
+    height: 1.2em;
+    overflow: hidden;
+    /*border-bottom: 1px solid #f1f1f1;*/
+    width: fit-content;
+}
+
+.fx-container .text-fx{
+    display: inline-block;
+    animation: slideUp 1s ease-in-out;
+} 
+
+.fx-container:nth-child(1) .text-fx{
+    animation-delay: 100ms;
+}
+
+.fx-container:nth-child(2) .text-fx{
+    animation-delay: 200ms;
+}
+
+.fx-container:nth-child(3) .text-fx{
+    animation-delay: 300ms;
+}
+
+@keyframes slideUp {
+    from{
+        transform: translateY(100%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}

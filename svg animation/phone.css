@@ -1,0 +1,34 @@
+#skeleton{
+    animation: fadeInUp 1s;
+}
+
+@keyframes fadeInUp {
+    from{
+        opacity: 0;
+        transform: translateY(20%);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#bolt g{
+    opacity: 0;
+    animation: dropIn 8s ease forwards infinite;
+    animation-delay: calc(var(--order) * 200ms);
+}
+
+@keyframes dropIn {
+    20%{
+        opacity: 0;
+        transform: translateY(-20%);
+
+    }
+
+    30%, 100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
