@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+:root{
+    --bg-color: #0f1923;
+}
+
+body{
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    background-color: var(--bg-color);
+}
+
+.btn{
+    --text-color: var(--bg-color);
+    --border-color: #7D8082;
+    --button-bg-color: #ECE8E1;
+    --highlight-color: #FF4655;
+    --text-color-hover: var(--button-bg-color);
+    --inner-border-color: transparent;
+    --bits-color: var(--bg-color);
+    --bits-color-hover: var(--button-bg-color);
+
+    position: relative;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 8px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all .15s ease;
+}
+
+.btn::before, .btn::after{
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: calc(50% - 5px);
+    border: 1px solid var(--border-color);
+    transition: all .15s ease;
+}
+
+.btn::before{
+    top: 0;
+    border-bottom-width: 0;
+}
+
+.btn::after{
+    bottom: 0;
+    border-top-width: 0;
+}
+
+.btn:active, .btn:focus{
+    outline: none;
+}
+
+.btn:active::before, .btn:active::after{
+    right: 3px;
+    left: 3px;
+}
+
+.btn:active::before{
+    top: 3px;
+}
+.btn:active::after{
+    bottom: 3px;
+}
+
+.inner{
+    position: relative;
+    display: block;
+    padding: 20px 30px;
+    background-color: var(--button-bg-color);
+    overflow: hidden;
+    box-shadow: inset 0px 0px 0px 1px var(--inner-border-color);
+}
+
+.btn{
+    color: var(--text-color);
+}
+
+.inner::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 2px;
+    background-color: var(--bits-color);
+}
+
+.inner::after{
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 4px;
+    height: 4px;
+    background-color: var(--bits-color);
+    transition: all .2s ease;
+}
+
+.slide{
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: -1px;
+    left: -8px;
+    width: 0;
+    background-color: var(--highlight-color);
+    transform: skew(-15deg);
+    transition: all .2s ease;
+}
+
+.content{
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn:hover{
+    color: var(--text-color-hover);
+}
+
+.btn:hover .slide{
+    width: calc(100% + 15px);
+}
+
+.btn:hover .inner::after{
+    background-color: var(--bits-color-hover);
+}
+
+.light{
+    --button-bg-color: var(--bg-color);
+    --text-color: var(--highlight-color);
+    --inner-border-color: var(--highlight-color);
+    --text-color-hover: #ece8e1;
+    --bits-color-hover: #ece8e1;
+}

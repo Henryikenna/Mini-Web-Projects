@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Server Status Board</title>
+</head>
+<body>
+    <div class="dashboard">
+        <header class="header">
+            <span>DataCenter</span>
+            <span class="clock">12 : 37 : 29</span>
+        </header>
+        <div class="server-list">
+            <div class="server">
+                <i class="fa-solid fa-earth-americas"></i>
+                <ul class="details">
+                    <li>
+                        HostName: <span class="data">US East (Nothern Virginia)</span>
+                    </li>
+                    <li>Status: <span class="datasignal">ONLINE</span> </li>
+                    <li>Address: <span class="data">192.168.0.24</span></li>
+                </ul>
+            </div>
+            <div class="server has-failed">
+                <i class="fa-solid fa-earth-asia"></i>
+                <ul class="details">
+                    <li>
+                        HostName: <span class="data">Asia Pacific (Tokyo)</span>
+                    </li>
+                    <li>Status: <span class="datasignal">OFFLINE</span> </li>
+                    <li>Address: <span class="data">192.168.0.25</span></li>
+                </ul>
+            </div>
+            <div class="server has-failed">
+                <i class="fa-solid fa-server"></i>
+                <ul class="details">
+                    <li>
+                        HostName: <span class="data">Australia (Sydney)</span>
+                    </li>
+                    <li>Status: <span class="datasignal">OFFLINE</span> </li>
+                    <li>Address: <span class="data">192.168.0.26</span></li>
+                </ul>
+            </div>
+            <div class="server has-failed">
+                <i class="fa-solid fa-server"></i>
+                <ul class="details">
+                    <li>
+                        HostName: <span class="data">Europe (London)</span>
+                    </li>
+                    <li>Status: <span class="datasignal">OFFLINE</span> </li>
+                    <li>Address: <span class="data">192.168.0.27</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
